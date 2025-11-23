@@ -1,17 +1,33 @@
-//5. Write a program which accept accept range from user and display all numbers in
-//between that range in reverse order.
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Write a program which accept range from user and display  
+//             all numbers in between that range in reverse order.
+////////////////////////////////////////////////////////////////////////
 
-
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : void RangeDisplay(int ino1 , int ino2)
+//      DESCRIPTION    : This function displays numbers in reverse order
+//                       between given range.
+//      INPUT          : ino1, ino2
+//      OUTPUT         : void
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+////////////////////////////////////////////////////////////////////////
 void RangeDisplay(int ino1 ,int ino2)
 {
     int i = 0;
-     for( i = ino2 ; i >= ino1 ; i--)
-     {
+    for( i = ino2 ; i >= ino1 ; i--)
+    {
         printf("%d\t",i);
-     }
+    }
 }
+
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
     int iValue1 = 0,iValue2 = 0;
@@ -22,7 +38,7 @@ int main()
     printf("Enter the  secound number :");
     scanf("%d",&iValue2);
 
-
     RangeDisplay(iValue1 , iValue2);
+
     return 0;
 }
