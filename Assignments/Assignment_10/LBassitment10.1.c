@@ -1,22 +1,41 @@
-//1. Write a program which accept radius of circle from user and calculate its area.
-//Consider value of PI as 3.14. (Area = PI * Radius * Radius)
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Accept one number from user and print '*' that
+//             number of times.
+//             (Example: Input = 5 → Output = *  *  *  *  *)
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
-double circlearea(float radius)
+
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : void Accept(int iNo)
+//      DESCRIPTION    : This function prints '*' (star) on the screen
+//                        as many times as the number provided by user.
+//      INPUT          : iNo (Number of stars to print)
+//      OUTPUT         : Nothing (void)
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+//      DATE           :
+////////////////////////////////////////////////////////////////////////
+void Accept(int iNo)
 {
-   double area = 0;
-   area = 3.14 * radius * radius;
-   return area;
-      
+     int i = 0;
+     for( i = 1; i <= iNo ; i++)
+     {
+        printf("*\t");
+     }
 }
 
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
-    float  iValue = 0;
-    double iret = 0;
+    int iValue = 0;
+    iValue = 5;
 
-    printf("Enter radius : ");
-    scanf("%f", &iValue);
+    Accept(iValue);
 
-   iret= circlearea(iValue);
-   printf("%lf",iret);
+    return 0;
 }
