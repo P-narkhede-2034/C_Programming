@@ -1,24 +1,42 @@
-//4. Write a program which accept temperature in Fahrenheit and convert it into
-//celsius. (1 celsius = (Fahrenheit -32) * (5/9))
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Write a program which accept temperature in Fahrenheit 
+//             and convert it into Celsius. 
+//             Formula : Celsius = (Fahrenheit - 32) * (5/9)
+////////////////////////////////////////////////////////////////////////
 
-
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 
-double  FhToCh(int ino)
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : double FhToCh(int ino)
+//      DESCRIPTION    : This function converts Fahrenheit to Celsius.
+//      INPUT          : ino
+//      OUTPUT         : double
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+//      DATE           : 
+////////////////////////////////////////////////////////////////////////
+double FhToCh(int ino)
 {
-     double celsius ;
-     celsius = (ino - 32 ) * 5.0/9.0;
+     double celsius = 0.0;
+     celsius = (ino - 32) * 5.0/9.0;
      return celsius;
 }
+
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
-    int  iValue1 = 0 ;
-    // double iret = 0.0; 
+    int iValue1 = 0;
 
-    printf("Enter temp in fahrenheit:");
+    printf("Enter temperature in Fahrenheit : ");
     scanf("%d",&iValue1);
 
-    double iret = FhToCh(iValue1);
-    printf("area of reactangle is : %lf",iret);
+    double iRet = FhToCh(iValue1);
+
+    printf("Temperature in Celsius is : %lf", iRet);
+
     return 0;
 }
