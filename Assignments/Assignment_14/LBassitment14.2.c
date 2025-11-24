@@ -1,13 +1,26 @@
-//2. Write a program which accept numberfrom user and check whether it contains 0
-//in it or not..
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Write a program which accept number from user and check 
+//             whether it contains 0 in it or not.
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include <stdio.h>
 #include <stdbool.h>
 
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : void checkbool(int ino)
+//      DESCRIPTION    : This function checks if the number contains 0.
+//      INPUT          : ino
+//      OUTPUT         : void
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+////////////////////////////////////////////////////////////////////////
 void checkbool(int ino)
 {
     int idigit = 0;
-    int arr[100];  // array to store digits
-    int i = 0;     // index
+    int arr[100];  
+    int i = 0;     
 
     while (ino != 0)
     {
@@ -41,6 +54,9 @@ void checkbool(int ino)
         printf("There is no zero.\n");
 }
 
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
     int iValue = 0;
