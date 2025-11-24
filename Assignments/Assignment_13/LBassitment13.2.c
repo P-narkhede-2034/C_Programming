@@ -1,20 +1,34 @@
-// 2) Print all even numbers up to N
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Print all even numbers up to N
+////////////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 
-void DisplayFactors(int iNo)
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : void DisplayEvenNumbers(int iNo)
+//      DESCRIPTION    : This function prints all even numbers up to N.
+//      INPUT          : iNo
+//      OUTPUT         : void
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+////////////////////////////////////////////////////////////////////////
+void DisplayEvenNumbers(int iNo)
 {
     int i = 0;
-    for (i = 0 ; i <= iNo ; i ++)
+    for (i = 0 ; i <= iNo ; i++)
     {
-        if (i % 2 == 0 )
-    {
-        printf("%d\t",i);
-    }
+        if (i % 2 == 0)
+        {
+            printf("%d\t",i);
+        }
     }
 }
 
-
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
     int iValue = 0;
@@ -22,7 +36,7 @@ int main()
     printf("Enter number : \n");
     scanf("%d",&iValue);
 
-    DisplayFactors(iValue);
+    DisplayEvenNumbers(iValue);
 
     return 0;
 }
