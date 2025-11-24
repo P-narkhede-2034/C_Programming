@@ -1,21 +1,37 @@
-//S) Find sum of first N even numbers
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Find sum of first N even numbers
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 
-int DisplayFactors(int iNo)
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : SumEvenNumbers
+//      DESCRIPTION    : This function returns sum of first N even numbers.
+//      INPUT          : iNo
+//      OUTPUT         : int
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+////////////////////////////////////////////////////////////////////////
+int SumEvenNumbers(int iNo)
 {
     int i = 0;
-    int  j = 0;
-    for (i = 0 ; i <= iNo ; i ++)
+    int j = 0;
+
+    for (i = 0 ; i <= iNo ; i++)
     {
-        if (i % 2 == 0 )
-    {
-        j = j + i;
-    }
+        if (i % 2 == 0)
+        {
+            j = j + i;
+        }
     }
     return j;
 }
 
-
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
     int iValue = 0, result = 0;
@@ -23,8 +39,8 @@ int main()
     printf("Enter number : \n");
     scanf("%d",&iValue);
 
-     result = DisplayFactors(iValue);
-      printf(" the sum is %d",result);
+    result = SumEvenNumbers(iValue);
+    printf(" the sum is %d",result);
 
     return 0;
 }
