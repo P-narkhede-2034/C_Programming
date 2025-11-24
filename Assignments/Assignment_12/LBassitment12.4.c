@@ -1,8 +1,20 @@
-//4) Sum of even factors (exclude the number itself)
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Sum of even factors (exclude the number itself)
+////////////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 
-void DisplayFactors(int iNo)
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : void SumEvenFactors(int iNo)
+//      DESCRIPTION    : This function returns sum of all even factors.
+//      INPUT          : iNo
+//      OUTPUT         : void
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+////////////////////////////////////////////////////////////////////////
+void SumEvenFactors(int iNo)
 {
     int iCnt = 0;
     int j = 0;
@@ -20,14 +32,14 @@ void DisplayFactors(int iNo)
             {
                 j = j + iCnt;
             }
-            
         }   
     }
     printf("%d",j);
 }
 
- // Time Complexity : O(N/2)
-
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
     int iValue = 0;
@@ -35,7 +47,7 @@ int main()
     printf("Enter number : \n");
     scanf("%d",&iValue);
 
-    DisplayFactors(iValue);
+    SumEvenFactors(iValue);
 
     return 0;
 }
