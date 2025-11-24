@@ -1,20 +1,34 @@
-// 3) Print all odd numbers up to N
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Print all odd numbers up to N
+////////////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 
-void DisplayFactors(int iNo)
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : void DisplayOddNumbers(int iNo)
+//      DESCRIPTION    : This function prints all odd numbers up to N.
+//      INPUT          : iNo
+//      OUTPUT         : void
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+////////////////////////////////////////////////////////////////////////
+void DisplayOddNumbers(int iNo)
 {
     int i = 0;
-    for (i = 0 ; i <= iNo ; i ++)
+    for (i = 0 ; i <= iNo ; i++)
     {
-        if (i % 2 != 0 )
-    {
-        printf("%d\t",i);
-    }
+        if (i % 2 != 0)
+        {
+            printf("%d\t",i);
+        }
     }
 }
 
-
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
     int iValue = 0;
@@ -22,7 +36,7 @@ int main()
     printf("Enter number : \n");
     scanf("%d",&iValue);
 
-    DisplayFactors(iValue);
+    DisplayOddNumbers(iValue);
 
     return 0;
 }
