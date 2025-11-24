@@ -1,30 +1,46 @@
-//2) Count total factors of a number
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Count total factors of a number
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : int CountFactor(int ino)
+//      DESCRIPTION    : This function counts total factors of given number.
+//      INPUT          : ino
+//      OUTPUT         : int
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+////////////////////////////////////////////////////////////////////////
 int CountFactor( int ino)
 {
      int iCnt = 0; 
-     int  iFrequency = 0;
+     int iFrequency = 0;
 
      if(ino < 0)
      {
         ino = -ino;
      }
 
-     for (iCnt = 1; iCnt<=(ino / 2); iCnt ++)
+     for (iCnt = 1; iCnt <= (ino / 2); iCnt++)
      {
-         if((ino % iCnt ) == 0)
+         if((ino % iCnt) == 0)
          {
-            iFrequency ++;
+            iFrequency++;
          }
      }
     
      return iFrequency;
 }
 
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
-    int iValue  = 0 , iRet = 0;
+    int iValue = 0, iRet = 0;
 
     printf("Enter the no :");
     scanf("%d",&iValue);
