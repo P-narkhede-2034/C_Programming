@@ -1,28 +1,42 @@
-// 4) Find sum of first N natural numbers
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Print all odd numbers up to N
+////////////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 
-int DisplayFactors(int iNo)
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : DisplayOddNumbers
+//      DESCRIPTION    : This function prints all odd numbers up to N.
+//      INPUT          : iNo
+//      OUTPUT         : void
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+////////////////////////////////////////////////////////////////////////
+void DisplayOddNumbers(int iNo)
 {
     int i = 0;
-    int j = 0;
-    for (i = 0 ; i <= iNo ; i ++)
+    for (i = 0 ; i <= iNo ; i++)
     {
-        
-       j = j + i;
+        if (i % 2 != 0)
+        {
+            printf("%d\t",i);
+        }
     }
 }
 
-
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
 int main()
 {
-    int iValue = 0 , result = 0;
+    int iValue = 0;
 
     printf("Enter number : \n");
     scanf("%d",&iValue);
 
-    result = DisplayFactors(iValue);
-    printf(" the sum is %d",result);
+    DisplayOddNumbers(iValue);
 
     return 0;
 }
