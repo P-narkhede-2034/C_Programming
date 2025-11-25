@@ -1,0 +1,58 @@
+///////////////////////////////////////////////////////////////////////
+//3. Accept number from user and display below pattern.
+
+//OUTPUT 
+//10
+//1       *       2       *       3       *       4       *       5       *
+///////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////
+//    REUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+void display(int ino)
+{
+   int i = 0;
+   
+  
+    for(i = 1 ; i <= ino ; i++ )
+       { 
+        if(i % 2 == 0)
+        {
+               printf("*\t");
+        }
+        else
+        {
+            printf("%d\t", (i/2)+1);
+
+        }
+       }
+    
+}
+
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    
+    printf("Enter the frequency \n");
+    scanf("%d",&iValue);
+
+    display(iValue);
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : void display(int ino)
+//      DESCRIPTION    : DIPLAY PATTERN 
+//      INPUT          : INT
+//      OUPUT          : VOID
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+//      DATE           : 21/11/2025
+///////////////////////////////////////////////////////////////////////

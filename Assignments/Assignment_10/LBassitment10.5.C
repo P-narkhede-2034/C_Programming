@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Write a program which accept area in square feet and 
+//             convert it into square meter. 
+//             (1 Square Feet = 0.0929 Square Meter)
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : double SquareMeter(int ino)
+//      DESCRIPTION    : This function converts area from square feet 
+//                        into square meters.
+//      INPUT          : ino
+//      OUTPUT         : double
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+//      DATE           : 
+////////////////////////////////////////////////////////////////////////
+double SquareMeter(int ino)
+{
+     double meter = 0.0;
+     meter = ino * 0.0929;
+     return meter;
+}
+
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
+int main()
+{
+    int iValue1 = 0;
+    double iRet = 0.0;
+
+    printf("Enter area in square feet : ");
+    scanf("%d",&iValue1);
+
+    iRet = SquareMeter(iValue1);
+
+    printf("Area in square meter is : %lf", iRet);
+
+    return 0;
+}

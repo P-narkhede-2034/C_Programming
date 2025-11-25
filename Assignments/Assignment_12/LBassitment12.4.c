@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////////////////////////
+//  QUESTION : Sum of even factors (exclude the number itself)
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+//    REQUIRED HEADER FILE 
+////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////
+//      FUNCTION NAME  : void SumEvenFactors(int iNo)
+//      DESCRIPTION    : This function returns sum of all even factors.
+//      INPUT          : iNo
+//      OUTPUT         : void
+//      AUTHOR         : PRANAV MANOJ NARKHEDE
+////////////////////////////////////////////////////////////////////////
+void SumEvenFactors(int iNo)
+{
+    int iCnt = 0;
+    int j = 0;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    for(iCnt = 1; iCnt <= (iNo / 2); iCnt++)
+    {
+        if((iNo % iCnt) == 0)
+        {
+            if(iCnt % 2 == 0)
+            {
+                j = j + iCnt;
+            }
+        }   
+    }
+    printf("%d",j);
+}
+
+////////////////////////////////////////////////////////////////////////
+//  ENTRY POINT FUNCTION FOR THE APPLICATION
+////////////////////////////////////////////////////////////////////////
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter number : \n");
+    scanf("%d",&iValue);
+
+    SumEvenFactors(iValue);
+
+    return 0;
+}
